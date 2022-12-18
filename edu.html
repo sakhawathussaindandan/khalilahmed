@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            border: 1px solid black;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+            background-color: #009879;
+            width: 30%;
+            color: white;
+            border: 1px solid black;
+        }
+
+        button {
+            background-color: white;
+            border: 1px solid green;
+            color: black;
+            padding: 10px;
+            margin: 0px;
+            justify-content: center;
+
+        }
+
+        button:hover {
+            background-color: #009879;
+            cursor: pointer;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MY EDUCATION</h1>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>University</th>
+                <th>Board</th>
+                <th>Grade</th>
+                <th>Passing Year</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active-row">
+                <td>Khalil Ahmed</td>
+                <td>Khalil Ahmed</td>
+                <td>SALU</td>
+                <td>SALU</td>
+                <td>4.3 GPA</td>
+                <td>2023</td>
+                <td>Khairpur</td>
+            </tr>
+            <tr>
+                <td><button>Delete</button></td>
+                <td><button>Insert</button></td>
+                <td><button>Update</button></td>
+                <td><a href="index.html"><button>Back</button></a></td>
+                <td><a href="edu.html"><button>Reload</button></a></td>
+                <td><a href="photos.html"><button>Photos</button></a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
